@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <title>menu pag</title>
+</head>
+<body>
+     
+                                 <!--part1st navbar start -->
+<nav style="position: sticky; top: 0; z-index: 1000; background-color: black" class="navbar navbar-expand-lg bg-body-black ">
+  <div class="container-fluid">
+    <img class="" style="width: 150px;" src="Buddy Pizza Chef-Hat Emblem.png" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div  class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a style="color:#F8C520; font-size: x-large;"  class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:#F8C520; font-size: x-large;" class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:#F8C520; font-size: x-large;" class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:#F8C520; font-size: x-large;" class="nav-link" href="contact.html">Contact</a>
+        </li>
+       
+      </ul>
+      <form class="d-flex" role="search">
+        <input style="background-color: #F8C520;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+                                 <!--part1st navbar end -->
+
+
+                                  <!--part2nd  Hero section -->
+ 
+
+    <section class="menu-section">
+
+        <div class="menu-heading">
+            <p class="small-title">FRESH • TASTY • DELICIOUS</p>
+            <h1 style="color: #F8C520;" >Explore Our <span>Menu</span></h1>
+            <p>Discover your favourite food at Buddy Pizza.</p>
+        </div>
+
+<div class="category-buttons">
+    <button class="active" onclick="showFood('all', this)">All Items</button>
+    <button onclick="showFood('pizza', this)">Pizza</button>
+    <button onclick="showFood('burger', this)">Burgers</button>
+    <button onclick="showFood('pasta', this)">Pasta</button>
+    <button onclick="showFood('wings', this)">Wings</button>
+    <button onclick="showFood('fries', this)">Fries</button>
+    <button onclick="showFood('sandwich', this)">Sandwiches</button>
+</div>
+
+ <div class="food-container">
+
+
+    <div class="food-card" data-category="pizza">
+        <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498" alt="Pizza">
+        <h3>Cheese Pizza</h3>
+        <p>Fresh cheese and tasty toppings.</p>
+        <h4>Rs. 999</h4>
+        <a href="contact.html" class="order-btn">Order Now</a>
+    </div>
+
+    <div class="food-card" data-category="burger">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger">
+        <h3>Buddy's Burger</h3>
+        <p>Juicy burger with fresh vegetables.</p>
+        <h4>Rs. 599</h4>
+        <a href="contact.html" class="order-btn">Order Now</a>
+    </div>
+
+    <div class="food-card" data-category="pasta">
+        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601" alt="Pasta">
+        <h3>Creamy Pasta</h3>
+        <p>Creamy pasta with delicious flavors.</p>
+        <h4>Rs. 699</h4>
+        <a href="contact.html" class="order-btn">Order Now</a>
+    </div>
+
+</div>
+
+        
+
+        <div class="food-container">
+
+            <!-- PIZZA -->
+            <div class="food-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e" alt="Cheese Pizza">
+                <div class="food-info">
+                    <span class="tag">BEST SELLER</span>
+                    <h3>Cheese Pizza</h3>
+                    <p>Cheesy pizza with fresh and tasty toppings.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 850</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47" alt="Pepperoni Pizza">
+                <div class="food-info">
+                    <h3>Pepperoni Pizza</h3>
+                    <p>Classic pizza with cheese and delicious toppings.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 1100</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Special Pizza">
+                <div class="food-info">
+                    <h3>Special Pizza</h3>
+                    <p>A flavourful pizza made for food lovers.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 1300</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BURGERS -->
+            <div class="food-card" data-category="burger">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Zinger Burger">
+                <div class="food-info">
+                    <span class="tag">POPULAR</span>
+                    <h3>Buddy's Zinger</h3>
+                    <p>Crispy chicken burger with fresh lettuce and sauce.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 450</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="burger">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Cheese Burger">
+                <div class="food-info">
+                    <h3>Cheese Burger</h3>
+                    <p>Juicy burger with melted cheese and fresh salad.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 500</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="burger">
+                <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add" alt="Double Burger">
+                <div class="food-info">
+                    <h3>Double Burger</h3>
+                    <p>A delicious double-layer burger with special sauce.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 650</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PASTA -->
+            <div class="food-card" data-category="pasta">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141" alt="Creamy Pasta">
+                <div class="food-info">
+                    <h3>Creamy Pasta</h3>
+                    <p>Creamy sauce, tender pasta and delicious herbs.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 550</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="pasta">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141" alt="Italian Pasta">
+                <div class="food-info">
+                    <h3>Italian Pasta</h3>
+                    <p>Italian-style pasta with rich and tasty flavours.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 600</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="pasta">
+                <img src="https://images.unsplash.com/photo-1556761223-4c4282c73f77" alt="Special Pasta">
+                <div class="food-info">
+                    <h3>Special Pasta</h3>
+                    <p>A satisfying pasta dish for a tasty meal.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 700</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WINGS -->
+            <div class="food-card" data-category="wings">
+                <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2" alt="Chicken Wings">
+                <div class="food-info">
+                    <h3>Hot Chicken Wings</h3>
+                    <p>Spicy wings with a crispy and flavourful coating.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 500</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="wings">
+                <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7" alt="Crispy Wings">
+                <div class="food-info">
+                    <h3>Crispy Wings</h3>
+                    <p>Crunchy chicken wings with delicious seasoning.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 550</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="wings">
+                <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f" alt="Spicy Chicken">
+                <div class="food-info">
+                    <h3>Spicy Chicken</h3>
+                    <p>A flavour-packed chicken treat for your cravings.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 600</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FRIES -->
+            <div class="food-card" data-category="fries">
+                <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877" alt="French Fries">
+                <div class="food-info">
+                    <h3>Golden Fries</h3>
+                    <p>Hot, crispy and perfectly golden french fries.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 250</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="fries">
+                <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d" alt="Loaded Fries">
+                <div class="food-info">
+                    <h3>Loaded Fries</h3>
+                    <p>Delicious fries topped with cheese and tasty sauces.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 400</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="fries">
+                <img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752" alt="Seasoned Fries">
+                <div class="food-info">
+                    <h3>Masala Fries</h3>
+                    <p>Crispy fries with a delicious spicy seasoning.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 300</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SANDWICHES -->
+            <div class="food-card" data-category="sandwich">
+                <img src="https://images.unsplash.com/photo-1553909489-cd47e0ef937f" alt="Club Sandwich">
+                <div class="food-info">
+                    <h3>Club Sandwich</h3>
+                    <p>Fresh bread filled with chicken and tasty sauces.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 400</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="sandwich">
+                <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af" alt="Chicken Sandwich">
+                <div class="food-info">
+                    <h3>Chicken Sandwich</h3>
+                    <p>Tender chicken, fresh vegetables and creamy filling.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 350</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-category="sandwich">
+                <img src="https://images.unsplash.com/photo-1521390188846-e2a3a97453a0" alt="Grilled Sandwich">
+                <div class="food-info">
+                    <h3>Grilled Sandwich</h3>
+                    <p>Golden grilled bread with a delicious filling.</p>
+                    <div class="food-bottom">
+                        <strong>Rs. 450</strong>
+                        <a href="contact.html" class="order-btn">Order Now ↗</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+                                   <!--part3rd footer start -->
+                                  <hr>
+<footer class="footer">
+  <div  class="footer-container">
+
+    <div class="footer-box">
+      <h2 style="color: #F8C520;" >  Buddy' <span>Pizza :</span></h2>
+      <p>  Welcome to Buddy Pizza, where every bite
+  brings happiness and delicious taste.
+  We serve fresh ingredients,  tasty pizzas,
+  juicy burgers, creamy pasta, and sandwiches.
+  Enjoy your favorite food  with us
+  and make every moment special!Delicious food, fresh ingredients,<br>
+      and unforgettable taste!</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Our Menu</h3>
+      <a href="#">Pizza</a>
+      <a href="#">Burgers</a>
+      <a href="#">Pasta</a>
+      <a href="#">Club Sandwich</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p>Karachi, Pakistan</p>
+      <p>Email: buddypizza@gmail.com</p>
+      <p>Open Daily: 12 PM - 12 AM</p>
+    </div>
+
+  </div> 
+
+  <div class="footer-bottom">
+    <p>© 2026 Buddy Pizza. All Rights Reserved.</p>
+  </div>
+</footer>
+                            
+           <!--part3rd footer end -->
+  
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/923001234567"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat with us on WhatsApp">
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp">
+</a>
+
+<script src="contact.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+</html>
